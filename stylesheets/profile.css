@@ -16,18 +16,23 @@ body {
     background-color: #f3e5f5;
     padding: 20px;
   }
+  h2{
+      padding:10px;
+  }
 .gridContainer{
-    display:inline-grid;
     background-color:#EEe;
     margin-top:110px;
     height:100%;
     width: 100%;
-    grid-gap:10px 50px;
-    grid-template-columns: auto auto auto auto;
-
+    clear:both;
+}
+.centerPanel{
+    float: left;
+    width: 78%;
 }
 .leftPanel{
-    width:100%;
+    float:left;
+    width:20%;
     left:0;
     top:0;
     height:100%;
@@ -74,4 +79,29 @@ ul#skills li{
     color: #212121;
     background-blend-mode: color-dodge;
     background-origin: border-box;
+}
+
+ul#projects{
+    list-style: none;
+    padding:0px;
+}
+ul#projects li{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #212121;
+    background-blend-mode: color-dodge;
+    background-origin: border-box;
+}
+
+div.project {
+    width: 100%;
+    height: 100px;
+    padding-left:30px;
+    border-bottom: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+li div.project h3 {
+    text-align: left;
 }

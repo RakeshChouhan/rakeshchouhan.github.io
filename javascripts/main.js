@@ -3,7 +3,8 @@
     
     
     function initXHR(){
-        let url = "https://api.github.com/users/rakeshchouhan/repos";
+       
+      let url = "https://api.github.com/users/rakeshchouhan/repos";
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if(xhr.readyState == 4 && xhr.status == 200){
@@ -20,7 +21,7 @@
             console.log(data[i]);
 
         }
-        //document.getElementById("projectContainer").innerHTML = tmpl;
+        document.getElementById("projectContainer").innerHTML = "<ul id='projects'>"+tmpl+"</ul>";
         console.log(tmpl);
     }
     function parse(data){
@@ -42,7 +43,7 @@
         return finalTmpl;
 
     }
-    var template = function(){return "<ul> <li>{name}</li></ul>"}
+    var template = function(){return "<li> <div class='project'> <h3>{name}</h3></div></li>"}
 
    window.onload =  initXHR;
 
