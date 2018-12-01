@@ -1,3 +1,4 @@
+
 (function(){
     "use strict"
     
@@ -16,11 +17,16 @@
     }
     function resultCallBack(data){
         let tmpl = "";
+        data= data.sort(function(a,b){ a = new Date(a.updated_at);
+            b = new Date(b.updated_at);
+            return a>b ? -1 : a<b ? 1 : 0;
+        });
         for(var i=0;i<data.length; i++){
             tmpl+=parse(data[i])
             console.log(data[i]);
 
         }
+
         document.getElementById("projectContainer").innerHTML = "<ul id='projects'>"+tmpl+"</ul>";
         console.log(tmpl);
     }
