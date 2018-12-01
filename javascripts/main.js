@@ -23,12 +23,10 @@
         });
         for(var i=0;i<data.length; i++){
             tmpl+=parse(data[i])
-            console.log(data[i]);
-
         }
 
         document.getElementById("projectContainer").innerHTML = "<ul id='projects'>"+tmpl+"</ul>";
-        console.log(tmpl);
+        
     }
     function parse(data){
         var tmpl = template();
