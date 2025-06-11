@@ -52,7 +52,7 @@
         return finalTmpl;
 
     }
-    var template = function(){return " <div class='project'> <h3>{name}</h3><p>{description}</p><a href='#'>{html_url}</a></div>"}
+    var template = function(){return " <div class='project'> <h3>{name}</h3><p>{description}</p><a href='{html_url}'>{html_url}</a></div>"}
 
    window.onload =  initXHR;
 
