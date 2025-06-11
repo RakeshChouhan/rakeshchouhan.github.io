@@ -24,8 +24,9 @@
         for(var i=0;i<data.length; i++){
             tmpl+=parse(data[i])
         }
+        document.getElementById("total-project").innerHTML = `(${data.length})`;
 
-        document.getElementById("projectContainer").innerHTML = "<ul id='projects'>"+tmpl+"</ul>";
+        document.getElementById("project-list").innerHTML = tmpl;
         
     }
     function parse(data){
@@ -34,20 +35,24 @@
         c.compile("[^\{]+(?=\})");
         var runLoop = true;
         var result = "";
-        var finalTmpl = "";
+        var finalTmpl = tmpl;
         while(true){
-           result =   c.exec(tmpl);
+           result =   c.exec(finalTmpl);
            if(result === null){
                break;
            }
            result = result[0];
-           finalTmpl += tmpl.replace("{"+result+"}", data[result]);
-           tmpl=finalTmpl;
+           let info = data[result];
+           if(info==null){
+             info="-NA-"
+           }
+           finalTmpl = finalTmpl.replace("{"+result+"}", info);
+           //tmpl=finalTmpl;
         }
         return finalTmpl;
 
     }
-    var template = function(){return "<li> <div class='project'> <h3>{name}</h3></div></li>"}
+    var template = function(){return " <div class='project'> <h3>{name}</h3><p>{description}</p><a href='#'>{html_url}</a></div>"}
 
    window.onload =  initXHR;
 

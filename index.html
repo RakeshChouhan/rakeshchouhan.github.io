@@ -3,50 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rakesh Chouhan</title>
-    <link rel="stylesheet" href="stylesheets/profile.css"/>
-    <script type="text/javascript" src="javascripts/main.js"> </script>
+    <title>Rak's GitHub Profile</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="javascripts/main.js"></script>
 </head>
 <body>
-    <div class="content">
-        <div class="header">
-            <h1>Rakesh Chouhan</h1>
 
+    <!-- Top Panel -->
+    <header>
+        <h1 id="head-name">Rakesh Chouhan</h1>
+        <p>Email: <a  href="mailto:developer.rakeshchouhan@gmail.com">developer.rakeshchouhan@gmail.com </a>| Developer | Architecture designer</p>
+    </header>
 
-        </div>
-        <div class="gridContainer">
-            <div class="leftPanel">
-             <h2>SKILLS</h2> 
-             <hr/>
-               <ul id="skills">
-                   <li>JAVA</li>
-                   <li>Spring</li>
-                   <li>Hibernate</li>
-                   <li>Playframework</li>
-                   <li>MultiThreading</li>
-                   <li>AKKA 2</li>
-                   <li>ReactJS</li>
-                   <li>Typescript</li>
-                   <li>Angular4</li>
-                   <li>CSS3</li>
-                   <li>HTML5</li>
-               </ul>
+    <!-- Middle Panel -->
+    <div class="container">
+        <!-- Left Section (Skills - 20%) -->
+        <aside class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript (React, Angular, Node.js)</li>
+                <li>Java, Spring Boot & playframework</li>
+                <li>SQL & NoSQL Databases</li>
+                <li>Cloud & DevOps (Docker, Kubernetes, Azure, AWS)</li>
+            </ul>
+        </aside>
+
+        <!-- Right Section (Projects - 80%) -->
+        
+           
+            <main class="projects">
+            <h2>GitHub Projects <span id="total-project"></span></h2>
+            <div class="project-container">
+            <div class="project-list" id="project-list">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Details about project 1...</p>
+                    <a href="#">View on GitHub</a>
+                </div>
             </div>
-            <div class="centerPanel">
-               <h2>Git Projects</h2> 
-               <hr/>
-               <div id="projectContainer">
-                   
-               </div>
             </div>
-        </div>
-        <div class="footer">
-            footer
-        </div>
-
+            </main>
     </div>
-    
-    
-</body>
-</html>
+    </body>
+    </html>
