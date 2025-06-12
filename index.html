@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,46 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="javascripts/main.js"></script>
 </head>
+
 <body>
 
     <!-- Top Panel -->
     <header>
         <h1 id="head-name">Rakesh Chouhan</h1>
-        <p>Email: <a  href="mailto:developer.rakeshchouhan@gmail.com">developer.rakeshchouhan@gmail.com </a>| Developer | Architecture designer</p>
+        <p>Email: <a href="mailto:developer.rakeshchouhan@gmail.com">developer.rakeshchouhan@gmail.com </a>| Developer |
+            Architecture designer</p>
     </header>
 
     <!-- Middle Panel -->
     <div class="container">
         <!-- Left Section (Skills - 20%) -->
-        <aside class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>JavaScript (React, Angular, Node.js)</li>
-                <li>Java, Spring Boot & playframework</li>
-                <li>SQL & NoSQL Databases</li>
-                <li>Cloud & DevOps (Docker, Kubernetes, Azure, AWS)</li>
-            </ul>
-        </aside>
+        <section class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">JavaScript (React, Angular, Node.js)</div>
+                <div class="skill">Java & Spring Boot</div>
+                <div class="skill">SQL & NoSQL Databases</div>
+                <div class="skill">Cloud & DevOps (Docker, AWS, Azure)</div>
+                <div class="skill">Gitlab/Jenkins/Azure Devops</div>
+            </div>
+        </section>
 
         <!-- Right Section (Projects - 80%) -->
-        
-           
-            <main class="projects">
+
+
+        <main class="projects">
             <h2>GitHub Projects <span id="total-project"></span></h2>
             <div class="project-container">
-            <div class="project-list" id="project-list">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>Details about project 1...</p>
-                    <a href="#">View on GitHub</a>
+                <div class="project-list" id="project-list">
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <p>Details about project 1...</p>
+                        <a href="#">View on GitHub</a>
+                    </div>
                 </div>
             </div>
-            </div>
-            </main>
+        </main>
     </div>
-    </body>
-    </html>
+</body>
+
+</html>
