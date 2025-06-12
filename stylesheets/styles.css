@@ -51,14 +51,10 @@ h1.head-name{
 }
 
 /* Left Section (Skills - 20%) */
-.skills {
-    width: 20%;
+.skill {
+    width: 100%;
+    border-bottom: 1px solid #444;
     background-color: #252525;
-    padding: 25px;
-    box-sizing: border-box;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
 }
 .skills:hover {
     transform: scale(1.05);
